@@ -19,11 +19,28 @@ Detailed documentation is located in the `docs/` directory, organized into the f
 - [Advanced Considerations](docs/advanced.md): APIs, Privacy Sandbox, and scaling with Google Ad Manager.
 - [Conclusion](docs/conclusion.md): Key takeaways and next steps.
 
+## Example Application
+
+The `examples/minimal-adsense-app/` directory contains a fully functional Next.js application demonstrating AdSense integration:
+- Supports both App Router and Pages Router.
+- Includes `@next/third-parties` with Google Tag Manager (GTM) and manual script implementations.
+- Features a reusable `AdUnit` component.
+- Optimized for Core Web Vitals and client-side navigation.
+
+To run the example:
+```bash
+cd examples/minimal-adsense-app
+npm install
+cp .env.example .env.local
+# Edit .env.local with your AdSense/GTM IDs
+npm run dev
+```
+
 ## Getting Started
 
 To use this documentation with Context7:
 1. Add this repository to Context7 via the [Add Library](https://context7.com/add-library?tab=github) page, using the GitHub URL: `https://github.com/your-username/nextjs-adsense-docs`.
-2. Configure Context7 to pull markdown files from the `docs/` directory.
+2. Configure Context7 to pull markdown files from the `docs/` directory and optionally include the `examples/` directory for code samples.
 3. Explore the documentation in Context7’s interface or directly in this repository.
 
 ## Contributing
